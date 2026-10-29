@@ -34,7 +34,8 @@ from . import six
 from .six import binary_type
 from .six import text_type
 from .six import iteritems
-from .six.moves import filter as ifilter
+# Built-in filter works on both Python 2.7 and Python 3.
+ifilter = filter
 
 """
 Pull out the Test objects and logic associated with them
